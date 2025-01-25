@@ -195,6 +195,7 @@ function App() {
       console.log(response); // Log response for debugging
     } catch (error) {
       alert("Error fetching clothing suggestions. Please try again.");
+      setIsLoading(false);
       setError(error);
     }
     setIsFormVisible(false);
